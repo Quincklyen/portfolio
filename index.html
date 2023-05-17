@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="css/normilize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+        <title>Сайт</title>
+        <meta name="description" content="Мой сайт">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <img src="img/main-logo.svg" alt="main-logo" width="60" height="60">
+                <nav class="main-nav">
+                    <a href="#about">Обо мне</a>
+                    <a href="#skills">Навыки</a>
+                    <a href="#interests">Интересы</a>
+                    <a href="#contacts">Контакты</a>
+                </nav>
+            </header>
+            <main>
+                <section class="intro">
+                    <div>
+                        <h1>Денис Дмитриевич</h1>
+                        <p class="subtitle">Разработчик</p>
+                    </div>
+                    <img src="img/user-photo.jpg" alt="Моя фотография" width="400" height="400">
+                </section>
+                <section id="about" class="about">
+                    <h2>Пара слов обо мне</h2>
+                    <div class="text-wrapper">
+                        <p>Привет ✌</p>
+
+                        <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана 
+                        по направлению «Информатика и вычисли­тельная техника».</p>
+                        
+                        <p>В прошлом году защитил диплом бакалавра на тему «Разработка очень 
+                        сложного программного комплекса для супер-важной цели». Работа была 
+                        высоко оценена комиссией.</p>
+                        
+                        <p>Также я уже успел поработать инженером в одном провайдере в Пушкино,
+                        но в будущем планирую стать разработчиком сложных программных
+                        комплексов и систем.</p>
+                    </div>
+                </section>
+                <section id="skills" class="skill">
+                    <div>
+                        <h2>Мои навыки</h2>
+                        <div class="skill-button">
+                            <p>Сортировать</p>
+                            <button>по названию</button>
+                            <button>по уровню</button>
+                        </div>
+                    </div>
+                    <dl class="skill-list">
+                        <dt class="skill-item_html">html</dt>
+                        <dd>
+                            <div style="width: 10%;">10%</div>
+                        </dd>
+                        <dt class="skill-item_java">java</dt>
+                        <dd>
+                            <div style="width: 40%;">40%</div>
+                        </dd>
+                        <dt class="skill-item_python">python</dt>
+                        <dd>
+                            <div style="width: 2%;">2%</div>
+                        </dd>
+                        <dt class="skill-item_cpp">c++</dt>
+                        <dd>
+                            <div style="width: 20%;">20%</div>
+                        </dd>
+                    </dl>
+                </section>
+                <section id="interests" class="interests">
+                    <h2>Мои интересы</h2>
+                    <div class="text-wrapper">
+                        <p>Наибольший интерес для меня в данный момент представляет 
+                        программирование и изучение искусственного интеллекта.</p>
+
+                        <p>Но помимо учёбы и работы я также люблю играть на барабанах и читать 
+                        зарубежную классику.</p>
+                    </div>
+                </section>
+                <section id="contacts" class="contacts">
+                    <h2>Мои контакты</h2>
+                    <ul class="contact">
+                        <li><a class="contact-link_phone" href="tel:+79991234567">+7 977 123 45 67</a></li>
+                        <li><a class="contact-link_mail" href="mailto:email@mail.ru">email@mail.ru</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a class="social-link_github"><span class="visually-hidden">github</span></a></li>
+                        <li><a class="social-link_gitlab"><span class="visually-hidden">gitlab</span></a></li>
+                        <li><a class="social-link_telegram"><span class="visually-hidden">telegram</span></a></li>
+                        <li><a class="social-link_vk"><span class="visually-hidden">vk</span></a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <footer class="main-footer">
+            <div class="container">
+                <p>© 2023 Денис Дмитриевич</p>
+            </div>
+        </footer>
+    </body>
+</html>

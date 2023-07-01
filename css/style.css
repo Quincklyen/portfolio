@@ -167,6 +167,10 @@ p.subtitle {
     max-width: 800px;
 }
 
+.skill h2 {
+    margin: 0;
+}
+
 .skill div {
     display: flex;
     flex-direction: row;
@@ -177,6 +181,10 @@ p.subtitle {
     margin: 0;
 }
 
+div.skill-about {
+    margin-bottom: 40px;
+}
+
 .skill-button p {
     margin: 0;
 }
@@ -184,7 +192,6 @@ p.subtitle {
 .skill-button {
     padding: 0;
     gap: 20px;
-    margin-bottom: 40px;
 }
 
 .skill-list {
@@ -204,7 +211,7 @@ p.subtitle {
 }
 
 .skill-list dd{
-    margin: 4px 0 20px;
+    margin: 4px 0 20px 0;
     padding: 2px;
     font-size: 0;
     border: 1px solid var(--black);
@@ -215,6 +222,8 @@ p.subtitle {
     height: 14px;
     background-color: var(--green);
     border-radius: 8px;
+
+    margin-bottom: 0;
 }
 
 .skill-item_html {
@@ -344,37 +353,10 @@ p.subtitle {
     background-color: var(--black);
 
     padding: 50px 0 50px 0;
-    gap: 10px;
 }
 
 :root {
     --black: #212121;
     --green: #09A494;
     --white: #FFFFFF;
-}
-
-@media screen and (max-width: 1024px) {   
-	h1 {
-        font-size: 50px;
-    }  
-    h2 {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 768px) {   
-	h1 {
-        font-size: 32px;
-    }  
-    h2 {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 650px) {   
-	/* переопределение свойств */   
-}
-
-@media screen and (max-width: 360px) {   
-	/* переопределение свойств */   
 }

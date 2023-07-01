@@ -340,31 +340,41 @@ p.subtitle {
 }
 
 .main-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
     color:var(--white);
     background-color: var(--black);
 
-    align-items: flex-start;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0 50px 0;
     gap: 10px;
-}
-
-.main-footer div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 120px;
-
-    width: 1240px;
-    height: 30px;
 }
 
 :root {
     --black: #212121;
     --green: #09A494;
     --white: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {   
+	h1 {
+        font-size: 50px;
+    }  
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {   
+	h1 {
+        font-size: 32px;
+    }  
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {   
+	/* переопределение свойств */   
+}
+
+@media screen and (max-width: 360px) {   
+	/* переопределение свойств */   
 }

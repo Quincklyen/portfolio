@@ -360,3 +360,174 @@ div.skill-about {
     --green: #09A494;
     --white: #FFFFFF;
 }
+
+@media screen and (max-width: 1024px) {   
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+    button, a, body {
+        font-size: 16px;
+    }
+
+    .intro img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main-nav{
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .skill-about{
+        margin-bottom: 40px;
+    }
+
+    .contacts, .interests, .skill, .about, .intro, .main-header {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {   
+
+}
+
+@media screen and (max-width: 650px) {   
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    button, a, body {
+        font-size: 14px;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 30px;
+    }
+
+    .intro img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 0px;
+        gap: 20px;
+
+    }
+
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .main-nav a{
+        padding: 20px 30px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .intro{
+        text-align: center;
+    }
+
+    .intro h1{
+        margin-bottom: 10px;
+    }
+
+    .skill-about{
+        margin-bottom: 30px;
+    }
+
+    .contacts, .interests, .skill, .about, .intro, .main-header {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 380px) {   
+    .skill-about{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-about div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+    .skill-about div button{
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-footer .container{
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+    }
+}
+
+@media screen and (max-width: 360px) { 
+    .contact{
+        flex-direction: column;
+        gap:20px;
+    }
+    .contact li a{
+        padding: 8px 0px 8px 42px;
+    }
+
+    .contacts, .interests, .skill, .about, .intro, .main-header {
+        margin-bottom: 50px;
+    }
+
+}

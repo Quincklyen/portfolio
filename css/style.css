@@ -49,12 +49,12 @@ h2 {
     margin-bottom: 40px;
 }
 
-a {
+button, a {
+    font-family: 'Open Sans', "Arial", sans-serif;;
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
-
-    text-align: center;
 }
 
 p {
@@ -67,26 +67,11 @@ p:last-child {
 }
 
 button {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-
-    text-align: center;
-
-    padding: 0;
-    border: none;
+    padding: 6px 10px 10px;
     color: var(--green);
     background-color: transparent;
-    cursor: pointer;
-
-    text-transform: lowercase;
-
-    box-sizing: border-box;
-
-    padding: 6px 10px 10px;
     border: 1px solid var(--green);
     border-radius: 8px;
-    
 }
 
 button:hover {
@@ -169,32 +154,35 @@ p.subtitle {
     max-width: 800px;
 }
 
-.skill h2 {
-    margin: 0;
-}
-
-.skill div {
+.skill-about {
     display: flex;
-    flex-direction: row;
+    padding: 0;
+    align-items: flex-start;
     justify-content: space-between;
-
-    align-items: center;
-    
     margin: 0;
-}
-
-div.skill-about {
     margin-bottom: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.skill-button p {
+.skill-about h2 {
     margin: 0;
+}
+
+.skill-about div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.skill-button p{
+    margin-bottom: 0;
 }
 
 .skill-button {
     padding: 0;
     gap: 20px;
-}
+}*/
 
 .skill-list {
     margin: 0;
@@ -249,15 +237,12 @@ div.skill-about {
 
 .contact {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
     margin: 0;
-    margin-bottom: 40px;
-    padding: 0;
-    gap: 40px;
-
     list-style-type: none;
+    gap: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    padding: 0;
 }
 
 .contact li {
@@ -267,14 +252,15 @@ div.skill-about {
 }
 
 .contact a {
-    text-decoration: none;
-    color: var(--black);
-
-    padding-left: 42px;
-    gap: 12px;
-
+    display: block;
+    padding: 5px;
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: left;
+    padding-left: 42px;
+    color: var(--black);
+    text-transform: none;
+    text-decoration: none;
+    flex-wrap: wrap;
 }
 
 .contact a:hover {
@@ -396,6 +382,10 @@ div.skill-about {
         font-size: 16px;
     }
 
+    p.subtitle{
+        font-size: 34px;
+    }
+
     .intro img{
         width: 250px;
         height: 250px;
@@ -419,13 +409,13 @@ div.skill-about {
         margin-bottom: 80px;
     }
 
-    
     .main-nav{
         padding: 0;
         gap: 0;
     }
     .main-nav a{
         padding: 10px 15px 10px 15px;
+        font-size: 16px;
     }
 
     .intro{
@@ -465,11 +455,15 @@ div.skill-about {
 
     .intro{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         padding: 0;
         gap: 30px;
+    }
+    
+    .intro div p{
+        font-size: 24px;
     }
 
     .intro img{
@@ -503,6 +497,7 @@ div.skill-about {
 
     .main-nav a{
         padding: 20px 30px;
+        font-size: 14px;
         gap: 0;
         text-align: center;
     }
@@ -550,10 +545,8 @@ div.skill-about {
         text-align: center;
     }
 
-    .main-footer .container{
-        padding-bottom: 30px;
-        padding-top: 30px;
-
+    .main-footer {
+        padding: 30px 0 30px 0;
     }
 
     .contact{
@@ -583,7 +576,7 @@ div.skill-about {
         width: 100%;
         gap: 10px;
     }
-    .skill-button button{
+    .skill-about div button{
         width: 100%;
         text-align: center;
     }

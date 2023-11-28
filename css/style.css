@@ -20,7 +20,8 @@ body {
     font-size: 20px;
     line-height: 150%;
 
-    color:var(--black)
+    color:var(--black);
+    background-color: var(--white);
 }
 
 section {
@@ -216,25 +217,6 @@ p.subtitle {
     margin-bottom: 0;
 }
 
-.skill-item_html {
-    background-image: url("../img/icon-html.svg");
-}
-
-
-.skill-item_java {
-    background-image: url("../img/icon-java.svg");
-}
-
-
-.skill-item_python {
-    background-image: url("../img/icon-python.svg");
-}
-
-
-.skill-item_cpp {
-    background-image: url("../img/icon-c++.svg");
-}
-
 .contact {
     display: flex;
     margin: 0;
@@ -271,8 +253,16 @@ p.subtitle {
     background-image: url(../img/contactsicon-phone.svg);
 }
 
+.dark-theme .contact-link_phone{
+    background-image: url(../img/dark-theme/phone.svg);
+}
+
 .contact-link_mail {
     background-image: url(../img/contactsicon-mail.svg);
+}
+
+.dark-theme .contact-link_mail{
+    background-image: url(../img/dark-theme/email.svg);
 }
 
 .social {
@@ -324,6 +314,10 @@ p.subtitle {
     background-image: url(../img/property-vk.svg);
 }
 
+.dark-theme .social-link:hover{
+    background-color: var(--yellow);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -352,6 +346,15 @@ p.subtitle {
     --black: #212121;
     --green: #09A494;
     --white: #FFFFFF;
+}
+
+.dark-theme{
+    --black: #CCCCCC;
+    --white: #031923;
+}
+
+.dark-theme .social-link{
+    background-color: #CCCCCC;
 }
 
 @media screen and (max-width: 1024px) {   

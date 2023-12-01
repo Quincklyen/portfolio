@@ -20,21 +20,21 @@ const skill = {
     }],
     generateList: function(parentElement) {
         this.data.forEach(element => {
-            const dtn = document.createElement('dt');
-            dtn.classList.add('skill-item');
-            dtn.textContent = element.item;
-            dtn.style.backgroundImage = `url(${element.iconPath})`;
+            const dt = document.createElement('dt');
+            dt.classList.add('skill-item');
+            dt.textContent = element.item;
+            dt.style.backgroundImage = `url(${element.iconPath})`;
 
-            const ddn = document.createElement('dd');
-            ddn.classList.add('skill-level');
+            const dd = document.createElement('dd');
+            dd.classList.add('skill-level');
             
-            const divn = document.createElement('div');
-            divn.style.width = `${element.level}%`;
-            divn.textContent = `${element.level}%`;
+            const div = document.createElement('div');
+            div.style.width = `${element.level}%`;
+            div.textContent = `${element.level}%`;
 
-            ddn.appendChild(divn);
+            dd.appendChild(div);
             
-            parentElement.append(dtn,ddn);
+            parentElement.append(dt,dd);
         });
     }
 };

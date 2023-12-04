@@ -18,7 +18,9 @@ const skill = {
         level: 22,
         iconPath: "img/icon-c++.svg",
     }],
+    isSorted: false,
     generateList: function(parentElement) {
+        parentElement.innerHTML = '';
         this.data.forEach(element => {
             const dt = document.createElement('dt');
             dt.classList.add('skill-item');
@@ -36,7 +38,32 @@ const skill = {
             
             parentElement.append(dt,dd);
         });
+    },
+    sortList: function(sortingType) {
+        if (skill.isSorted !== sortingType){
+            switch (sortingType){
+                case 'name':
+                    this.data.sort((a,b) => a.item.localeCompare(b.item)); break;
+                case 'level':
+                    this.data.sort((a,b) => b.level - a.level); break;
+                default:
+                    return;
+            }
+            this.isSorted = sortingType;
+        } else {
+            this.data.reverse();
+        }
+        this.generateList(document.querySelector("dl.skill-list"));
     }
 };
 
 skill.generateList(document.querySelector('dl.skill-list'));
+
+sortBtnBlock = document.querySelector("div.skill-button");
+sortBtnBlock.addEventListener('click', (e) => {
+    let target = e.target;
+    if (target.nodeName === "BUTTON")
+    {
+        skill.sortList(target.dataset.type);
+    } 
+});

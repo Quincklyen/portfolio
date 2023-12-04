@@ -89,4 +89,3 @@ const menu = {
 btn.addEventListener('click', (e) => {
     e.target.classList.contains('nav-btn_open') ? menu.open() : menu.close();
 });
-menu.close();

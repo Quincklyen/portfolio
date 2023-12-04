@@ -78,6 +78,7 @@ button {
 button:hover {
     color: var(--white);
     background-color: var(--green);
+    cursor: pointer;
 }
 
 p.subtitle {
@@ -296,6 +297,7 @@ p.subtitle {
 
 .social a:hover {
     background-color: var(--green);
+    cursor: pointer;
 }
 
 .social-link_github {

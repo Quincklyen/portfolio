@@ -67,3 +67,26 @@ sortBtnBlock.addEventListener('click', (e) => {
         skill.sortList(target.dataset.type);
     } 
 });
+
+const nav = document.querySelector('.main-nav');
+const btn = document.querySelector('.nav-btn');
+
+const menu = {
+    open: function() {
+        nav.classList.remove('main-nav_closed');
+        btn.classList.add('nav-btn_close');
+        btn.classList.remove('nav-btn_open');
+        btn.innerHTML = '<span class="visually-hidden">Закрыть меню</span>';
+    },
+    close: function() {
+        nav.classList.add('main-nav_closed');
+        btn.classList.remove('nav-btn_close');
+        btn.classList.add('nav-btn_open');
+        btn.innerHTML = '<span class="visually-hidden">Открыть меню</span>';
+    },
+};
+
+btn.addEventListener('click', (e) => {
+    e.target.classList.contains('nav-btn_open') ? menu.open() : menu.close();
+});
+menu.close();

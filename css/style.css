@@ -523,6 +523,11 @@ p.subtitle {
         width: 30PX;
         height: 30px;
         border: 0;
+        border-radius: 0;
+    }
+
+    .nav-btn:hover{
+        background-color: transparent;
     }
 
     .nav-btn_close{
@@ -568,6 +573,10 @@ p.subtitle {
 
     .contacts a{
         padding: 7px 0 7px 42px;
+    }
+
+    .main-nav_closed{
+        display: none;
     }
 }
 

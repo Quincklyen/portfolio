@@ -1,23 +1,5 @@
 const skill = {
-    data: [{
-        item: "html",
-        level: 10,
-        iconPath: "img/icon-html.svg",
-    },
-    {
-        item: "java",
-        level: 40,
-        iconPath: "img/icon-java.svg",
-    },
-        {item: "python",
-        level: 20,
-        iconPath: "img/icon-python.svg",
-    },
-    {
-        item: "C++",
-        level: 22,
-        iconPath: "img/icon-c++.svg",
-    }],
+    data: [],
     isSorted: false,
     generateList: function(parentElement) {
         parentElement.innerHTML = '';
@@ -54,10 +36,24 @@ const skill = {
             this.data.reverse();
         }
         this.generateList(document.querySelector("dl.skill-list"));
+    },
+    initList: function(url, parentElement, skillSection) {
+        fetch(url)
+        .then(data => data.json())
+        .then(object =>{
+            this.data = object;
+            this.generateList(parentElement);
+        })
+        .catch(()=>{
+            console.error('ERROR');
+            skillSection.remove(); 
+        })
     }
 };
 
-skill.generateList(document.querySelector('dl.skill-list'));
+const skillList = document.querySelector('dl.skill-list');
+const skillSection = document.querySelector('section.skill');
+skill.initList('db/skills.json', skillList, skillSection);
 
 sortBtnBlock = document.querySelector("div.skill-button");
 sortBtnBlock.addEventListener('click', (e) => {

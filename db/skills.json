@@ -1,0 +1,22 @@
+[
+    {
+        "item": "html",
+        "level": 10,
+        "iconPath": "img/icon-html.svg"
+    },
+    {
+        "item": "java",
+        "level": 40,
+        "iconPath": "img/icon-java.svg"
+    },
+    {
+        "item": "python",
+        "level": 20,
+        "iconPath": "img/icon-python.svg"
+    },
+    {
+        "item": "C++",
+        "level": 22,
+        "iconPath": "img/icon-c++.svg"
+    }
+]
